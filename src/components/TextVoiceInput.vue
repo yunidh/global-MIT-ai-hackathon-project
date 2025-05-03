@@ -88,7 +88,7 @@ textarea {
   width: 100%;
   border: 1px solid #ccc;
   border-radius: 6px;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .button-row {

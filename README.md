@@ -1,4 +1,4 @@
-# Mediate
+# Mediate - AI Assistant for Field Negotiators
 
 This template should help get you started developing with Vue 3 in Vite.
 
