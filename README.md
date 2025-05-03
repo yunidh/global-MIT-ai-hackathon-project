@@ -7,7 +7,7 @@ Mediate is an application that takes a scenarios as prompts and uses AI to provi
 
 ![image](https://github.com/user-attachments/assets/2b114f50-6126-47ec-b277-83d0ec247f76)
 <p float="center">
-  <img src="https://github.com/user-attachments/assets/c2ace9ae-0118-4fc5-98f6-fbab9ce8e0f7" width="500" />
+  <img src="https://github.com/user-attachments/assets/c2ace9ae-0118-4fc5-98f6-fbab9ce8e0f7" width="400" />
   <img src="https://github.com/user-attachments/assets/659b950d-8610-42fe-9b46-020c8491689d" width ="500"/>
 </p>
 
