@@ -1,9 +1,11 @@
 # Mediate - AI Assistant for Field Negotiators
 
 Mediate is an application that takes a scenarios as prompts and uses AI to provide assistance in negotiations by providing the following details:
-• 4-column “Island of Agreement” table,  
-• Prioritize / Avoid recommendation list, 
-• Stakeholder influence Map. 
+<ul>
+<li>4-column “Island of Agreement” table</li>
+<li>Prioritize / Avoid recommendation list</li>
+<li>Stakeholder influence Map</li> 
+</ul>
 
 ![image](https://github.com/user-attachments/assets/2b114f50-6126-47ec-b277-83d0ec247f76)
 <p float="center">
