@@ -342,14 +342,16 @@ const smRows = computed(() => {
           </AccordionContent>
         </AccordionItem>
       </AccordionRoot>
-      <button class="save-btn" @click="saveToHistory">Save to History</button>
+      <button class="save-btn" v-if="isLoading" @click="saveToHistory">Save to History</button>
     </div>
   </main>
 </template>
 
 <style scoped>
 .text-input {
-  margin: 10vh 10vw;
+  margin-top: 10vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 .output-box {
   margin: 0 10vw;
