@@ -1,4 +1,4 @@
-import './assets/main.css'
+import './assets/pico.jade.min.css'
 import '@/registerServiceWorker'
 
 import { createApp } from 'vue'

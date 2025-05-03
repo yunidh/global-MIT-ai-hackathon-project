@@ -2,40 +2,37 @@
 import { RouterLink, RouterView } from 'vue-router'
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
+import TextVoiceInput from './components/TextVoiceInput.vue'
 import ChatIcon from 'vue-material-design-icons/Chat.vue'
 import HistoryIcon from 'vue-material-design-icons/History.vue'
-components: {
-  ChatIcon
-  HistoryIcon
-}
+
 const { t, locale } = useI18n({ useScope: 'global' })
-const language = ref(locale.value === 'en' ? 'नेपाली' : 'English')
+const language = ref(locale.value === 'np' ? 'English' : 'नेपाली')
 
 const toggleLanguage = () => {
-  locale.value = locale.value === 'en' ? 'np' : 'en'
-  language.value = locale.value === 'en' ? 'नेपाली' : 'English'
+  const newLocale = locale.value === 'en' ? 'np' : 'en'
+  locale.value = newLocale
+  language.value = newLocale === 'en' ? 'नेपाली' : 'English'
 }
 </script>
 
 <template>
-  <header>
-    <div class="navbar">
-      <nav class="nav-links">
-        <RouterLink to="/">
-          <chat-icon />
-          <span style="font-weight: bold">{{ t('chat') }}</span>
-        </RouterLink>
-        <RouterLink to="/about">
-          <history-icon />
-          <span style="font-weight: bold">{{ t('history') }}</span>
-        </RouterLink>
-      </nav>
-      <h1 class="title">{{ t('title') }}</h1>
-      <button class="language-toggle" @click="toggleLanguage">
-        {{ language }}
-      </button>
-    </div>
-  </header>
+  <div class="navbar">
+    <nav class="nav-links">
+      <RouterLink to="/">
+        <chat-icon />
+        <span style="font-weight: bold">{{ t('chat') }}</span>
+      </RouterLink>
+      <RouterLink to="/history">
+        <history-icon />
+        <span style="font-weight: bold">{{ t('history') }}</span>
+      </RouterLink>
+    </nav>
+    <h1 class="title">{{ t('title') }}</h1>
+    <button class="language-toggle" @click="toggleLanguage">
+      {{ language }}
+    </button>
+  </div>
 
   <RouterView />
 </template>
@@ -61,7 +58,7 @@ const toggleLanguage = () => {
 }
 
 .nav-links a {
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-decoration: none;
   color: #3494fa;
 }
@@ -81,8 +78,8 @@ const toggleLanguage = () => {
   background-color: #3494fa;
   color: white;
   border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
+  padding: 5px 5px;
+  border-radius: 50px;
   cursor: pointer;
   padding: 10px;
 }

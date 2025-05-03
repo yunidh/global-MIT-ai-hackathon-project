@@ -11,7 +11,9 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "ollama": "^0.5.15",
     "pinia": "^3.0.1",
+    "radix-vue": "^1.9.17",
     "vue": "^3.5.13",
     "vue-i18n": "^10.0.7",
     "vue-material-design-icons": "^5.3.1",
